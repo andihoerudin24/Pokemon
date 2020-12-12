@@ -1,0 +1,41 @@
+.pokemons-names__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow-blur);
+  padding: 1.5rem;
+  width: 12rem;
+  height: 18rem;
+  background: #fff;
+  margin: 3rem 1rem 1rem 1rem;
+  border-radius: var(--border-radius-medium);
+}
+.no-pokemon__img {
+  height: 15rem;
+  margin: 2rem;
+  margin-right: 0rem;
+}
+.single-pokemon__img {
+  max-height: 8rem;
+  margin: 0.5rem;
+  object-fit: contain;
+}
+.single-pokemon__btn {
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+}
+.single-pokemon__name {
+  font-family: 'Permanent Marker', cursive;
+}
+.add-to-fav__img--list {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-half);
+  box-shadow: var(--box-shadow-blur);
+}

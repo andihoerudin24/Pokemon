@@ -1,0 +1,40 @@
+.sort-pokemon {
+  background: var(--light-grey-bg);
+  width: 9rem;
+  padding: 0.6rem;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow-blur);
+  align-self: center;
+  margin: 1rem 0.6rem 0.6rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.sort-pokemon__select {
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  box-shadow: var(--box-shadow-subtle);
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--border-radius-medium);
+  margin-top: 1rem;
+  background: #fff;
+}
+.sort-title {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 832px) {
+  .sort-pokemon {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 976px) {
+  .sort-pokemon {
+    margin-top: auto;
+    padding: 1.5rem;
+  }
+  .sort-title {
+    font-size: 1.4rem;
+  }
+}

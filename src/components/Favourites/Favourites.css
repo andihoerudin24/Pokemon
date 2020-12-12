@@ -1,0 +1,13 @@
+.favourites {
+  padding-top: 8rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.favourites__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.favourites .pokemon-details__card {
+  margin: 2rem;
+}

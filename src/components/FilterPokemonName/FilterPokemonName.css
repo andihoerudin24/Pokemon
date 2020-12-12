@@ -1,0 +1,54 @@
+.filter-pokemon-name {
+  margin: 1rem 0.6rem 0.6rem 0.6rem;
+}
+.search-pokemon__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 15rem;
+  margin: 0 auto;
+  background: var(--light-grey-bg);
+  padding: 0.8rem;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow-blur);
+}
+.search-pokemon__input {
+  border-radius: var(--border-radius-medium);
+  padding: 0.5rem;
+  font-family: inherit;
+  padding: 0.4rem 0.6rem 0.4rem 3.5rem;
+  border: none;
+  box-shadow: var(--box-shadow-subtle);
+  margin-top: 1rem;
+  background: #fff;
+  width: 90%;
+}
+.search-icon {
+  height: 1.2rem;
+  position: absolute;
+  left: 2.2rem;
+  bottom: 1.1rem;
+}
+.search-icon-type {
+  top: 15rem;
+}
+
+@media screen and (min-width: 832px) {
+  .search-pokemon__form {
+    width: 15rem;
+  }
+}
+@media screen and (min-width: 976px) {
+  .filter-pokemon-name {
+    margin-top: auto;
+  }
+  .search-pokemon__form {
+    padding: 1.6rem;
+  }
+  .search-icon {
+    left: 3.2rem;
+    bottom: 1.8rem;
+  }
+}

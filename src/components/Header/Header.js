@@ -41,7 +41,7 @@ const Header = () => (
             to={routes.favourites}
             className='nav__link'
           >
-            <h5 className='nav-link__heading'>Pokemon Favorites</h5>
+            <h5 className='nav-link__heading'>Favourites</h5>
             <img
               src={navFavIcon}
               className='nav-link__img'

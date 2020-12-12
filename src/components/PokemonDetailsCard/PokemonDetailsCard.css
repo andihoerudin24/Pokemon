@@ -1,0 +1,94 @@
+.pokemon-details__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: var(--border-radius-small);
+  padding: 1rem;
+  width: 16rem;
+  height: 25rem;
+  margin: 3rem auto 2rem auto;
+  background: #f4f4f4;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.pokemon-details__card::before {
+  content: "";
+  height: 100px;
+  background: #42b549;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.pokemon-details__img {
+  height: 7rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: var(--border-radius-medium);;
+  z-index: 2;
+  background: #f0f0f0;
+  object-fit: cover;
+}
+.pokemon-details__name {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.2rem;
+  z-index: 3;
+}
+.pokemon-detail__types {
+  display: flex;
+}
+.type-icon {
+  height: 3rem;
+  margin: 0.5rem;
+}
+.btn__pokemons-list {
+  margin-bottom: 2rem;
+  background: #000;
+  border:none;
+  padding: 0.7rem 1rem;
+  color: white;
+}
+.add-to-fav__img {
+  position: absolute;
+  height: 4rem;
+  top: -2.5rem;
+  left: 6.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: var(--border-radius-half);
+  cursor: pointer;
+}
+.add-to-fav__wrapper {
+  position: relative;
+}
+.add-to-fav-tooltip {
+  display: none;
+  position: absolute;
+  top: -4rem;
+  left: -6rem;
+  width: 10rem;
+  box-shadow: 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border-radius: var(--border-radius-small);
+  background: #fff;
+}
+.add-to-fav__tooltip-img {
+  height: 2rem;
+}
+
+
+@media screen and (min-width: 721px) {
+  .pokemon-details__card {
+    margin: 5rem auto 2rem auto;
+  }
+}
+
+@media screen and (min-width: 864px) {
+  .add-to-fav-tooltip {
+    top: -3rem;
+    left: 12rem;
+  }
+  .hovered {
+    display: block;
+  }
+}

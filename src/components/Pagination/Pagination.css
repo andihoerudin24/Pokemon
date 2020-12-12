@@ -1,0 +1,34 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 60rem;
+}
+.pagination__pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40rem;
+  margin: 0.5rem;
+}
+.pagination__heading {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+}
+.pagination__current-page {
+  color: var(--pokemon-red);
+  font-weight: bold;
+}
+.pagination__btn {
+  width: 2.5rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 976px) {
+  .pagination {
+    margin: 2rem auto 2rem auto;
+  }
+  .pagination__btn {
+    width: 3rem;
+  }
+}

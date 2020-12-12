@@ -13,7 +13,7 @@ const Home = () => {
       style={{backgroundImage: `url(${heroImg})`}}
     >
       <div className='homepage__content'>
-        <h2>Sealamat Datang</h2>
+        <h2>Selamat Datang</h2>
         <img
           src={pokemonPlaceholder}
           alt='pokemon avatar'
