@@ -1,5 +1,5 @@
 import React from 'react';
-import pokemonPlaceholder from '../../assets/pokemon-placeholder.svg';
+import pokemonPlaceholder from '../../assets/tokopedia.svg';
 import navFavIcon from '../../assets/heart.svg';
 import './Header.css';
 import { Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ import { routes } from '../../helpers/routes';
 const Header = () => (
   <header className='header'>
     <div className='app-name'>
-      <h1 className='app-name__heading'>POKEDEX APP</h1>
+      <h1 className='app-name__heading'>POKEMON</h1>
       <Link to={routes.root}>
         <img
           src={pokemonPlaceholder}
@@ -41,7 +41,7 @@ const Header = () => (
             to={routes.favourites}
             className='nav__link'
           >
-            <h5 className='nav-link__heading'>Favourites</h5>
+            <h5 className='nav-link__heading'>Pokemon Favorites</h5>
             <img
               src={navFavIcon}
               className='nav-link__img'

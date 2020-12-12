@@ -4,6 +4,7 @@ import heroImg from '../../assets/hero-img.jpg';
 import pokemonAvatar from '../../assets/pokemon-avatar.svg';
 import { Link } from 'react-router-dom';
 import { routes } from '../../helpers/routes';
+import pokemonPlaceholder from '../../assets/tokopedia.svg';
 
 const Home = () => {
   return (
@@ -12,18 +13,17 @@ const Home = () => {
       style={{backgroundImage: `url(${heroImg})`}}
     >
       <div className='homepage__content'>
-        <h2>Welcome to POKEDEX</h2>
+        <h2>Sealamat Datang</h2>
         <img
-          src={pokemonAvatar}
+          src={pokemonPlaceholder}
           alt='pokemon avatar'
           className='pokemon-avatar'
         />
-        <p className='homepage__content__description'>Browse through all Pokemon, find out details about each one and save your favourite ones!</p>
         <Link
           to={routes.pokemon}
           className='find-pokemon__btn'
         >
-          Find Pokemon
+          Cari Pokemon Kesukaan Agan Ya
         </Link>
       </div>
     </section>
