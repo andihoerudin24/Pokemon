@@ -1,0 +1,68 @@
+.homepage {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .homepage__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 20rem;
+    height: 25rem;
+  }
+  .pokemon-avatar {
+    height: 7rem;
+  }
+  .homepage__content__description:before {
+    content: "";
+    height: 3px;
+    background: #fff;
+    width: 17rem;
+    position: absolute;
+    border-radius: var(--border-radius-small);
+    top: 13.5rem;
+    left: 1.5rem;
+  }
+  .homepage__content__description {
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+  }
+  .find-pokemon__btn {
+    background: transparent;
+    border: 3px solid var(--pokemon-red);
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--border-radius-small);
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+  }
+  .find-pokemon__btn:hover {
+    background: var(--pokemon-red);
+  }
+  
+  @media screen and (min-width: 595px) {
+    .homepage__content {
+      height: 30rem;
+    }
+    .pokemon-avatar {
+      height: 9rem;
+    }
+    .homepage__content__description {
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+    .homepage__content__description:before {
+      top: 17rem;
+    }
+  }
