@@ -18,7 +18,7 @@
     height: 25rem;
   }
   .pokemon-avatar {
-    height: 50rem;
+    height: 100%;
   }
   .homepage__content__description:before {
     content: "";

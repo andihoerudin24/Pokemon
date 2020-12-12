@@ -7,7 +7,6 @@ import Pagination from '../Pagination/Pagination';
 import './PokemonPage.css';
 import FilterSection from '../FilterSection/FilterSection';
 import FetchingError from '../FetchingError/FetchingError';
-
 const PokemonPage = () => {
 
   const { currentPageResults, nameInputValue, chosenPokemonType, pokemonCache, setChosenPokemonType, setNameInputValue } = useContext(PokemonContext);
